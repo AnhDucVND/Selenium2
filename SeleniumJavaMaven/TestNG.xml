@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example">
+    <test name="sample test">
+        <parameter name="browserType" value="chrome" />
+        <parameter name="URL"
+                   value="https://myaccount.vndirect.com.vn/login" />
+        <classes>
+            <class name="TestCases.SignInTest">
+                <methods>
+                    <include name="signIn" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
